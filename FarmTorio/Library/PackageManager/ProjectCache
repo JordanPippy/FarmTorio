@@ -5,27 +5,27 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637801167714662511
-    m_Hash: 1197561154
+      ticks: 637801294556664174
+    m_Hash: 4122242522
   m_LockFileStatus:
     m_FilePath: S:/Unity/FarmTorio/FarmTorio/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637801167990282002
-    m_Hash: 3466310726
+      ticks: 637801294556673934
+    m_Hash: 2142378987
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
   m_Packages:
     m_ResolvedPackages:
-    - packageId: com.unity.2d.animation@5.0.7
+    - packageId: com.unity.2d.animation@5.1.0
       testable: 0
       isDirectDependency: 1
-      version: 5.0.7
+      version: 5.1.0
       source: 1
-      resolvedPath: S:\Unity\FarmTorio\FarmTorio\Library\PackageCache\com.unity.2d.animation@5.0.7
+      resolvedPath: S:\Unity\FarmTorio\FarmTorio\Library\PackageCache\com.unity.2d.animation@5.1.0
       assetPath: Packages/com.unity.2d.animation
       name: com.unity.2d.animation
       displayName: 2D Animation
@@ -82,6 +82,7 @@ m_PackageAssets:
         - 3.2.13
         - 3.2.14
         - 3.2.15
+        - 3.2.16
         - 4.0.0
         - 4.0.1
         - 4.1.0
@@ -104,6 +105,7 @@ m_PackageAssets:
         - 5.0.8
         - 5.0.9
         - 5.0.10
+        - 5.1.0
         - 6.0.0-pre.1
         - 6.0.0-pre.2
         - 6.0.1
@@ -119,16 +121,13 @@ m_PackageAssets:
         - 7.0.3
         - 8.0.0-pre.3
         - 8.0.0-pre.4
+        - 8.0.0
         compatible:
-        - 5.0.6
-        - 5.0.7
-        - 5.0.8
-        - 5.0.9
-        - 5.0.10
-        verified: 5.0.10
+        - 5.1.0
+        verified: 5.1.0
       dependencies:
       - name: com.unity.2d.common
-        version: 4.0.3
+        version: 4.1.0
       - name: com.unity.mathematics
         version: 1.1.0
       - name: com.unity.2d.sprite
@@ -139,7 +138,7 @@ m_PackageAssets:
         version: 1.0.0
       resolvedDependencies:
       - name: com.unity.2d.common
-        version: 4.0.3
+        version: 4.1.0
       - name: com.unity.2d.sprite
         version: 1.0.0
       - name: com.unity.modules.uielements
@@ -171,13 +170,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637637510960000000
+      datePublishedTicks: 637781310880000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/2d.git
-        revision: 6f9c488e4d487ead34ee4d516f0a2f4a911a8b25
+        revision: e1ff2896b994f5eb1cc6bec519c643b3e2cd32ec
         path: 
     - packageId: com.unity.2d.pixel-perfect@4.0.1
       testable: 0
@@ -254,12 +253,12 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/2d.git
         revision: 7d7470f4ca0ea8353d4c9640b3b6ae9d1ebd9c1d
         path: 
-    - packageId: com.unity.2d.psdimporter@4.1.0
+    - packageId: com.unity.2d.psdimporter@4.2.0
       testable: 0
       isDirectDependency: 1
-      version: 4.1.0
+      version: 4.2.0
       source: 1
-      resolvedPath: S:\Unity\FarmTorio\FarmTorio\Library\PackageCache\com.unity.2d.psdimporter@4.1.0
+      resolvedPath: S:\Unity\FarmTorio\FarmTorio\Library\PackageCache\com.unity.2d.psdimporter@4.2.0
       assetPath: Packages/com.unity.2d.psdimporter
       name: com.unity.2d.psdimporter
       displayName: 2D PSD Importer
@@ -313,6 +312,7 @@ m_PackageAssets:
         - 4.1.1
         - 4.1.2
         - 4.1.3
+        - 4.2.0
         - 5.0.0-pre.1
         - 5.0.0-pre.2
         - 5.0.1
@@ -327,22 +327,20 @@ m_PackageAssets:
         - 6.0.2
         - 7.0.0-pre.3
         - 7.0.0-pre.4
+        - 7.0.0
         compatible:
-        - 4.1.0
-        - 4.1.1
-        - 4.1.2
-        - 4.1.3
-        verified: 4.1.3
+        - 4.2.0
+        verified: 4.2.0
       dependencies:
       - name: com.unity.2d.common
-        version: 4.0.3
+        version: 4.1.0
       - name: com.unity.2d.animation
-        version: 5.0.6
+        version: 5.1.0
       - name: com.unity.2d.sprite
         version: 1.0.0
       resolvedDependencies:
       - name: com.unity.2d.common
-        version: 4.0.3
+        version: 4.1.0
       - name: com.unity.2d.sprite
         version: 1.0.0
       - name: com.unity.modules.uielements
@@ -356,7 +354,7 @@ m_PackageAssets:
       - name: com.unity.modules.uielementsnative
         version: 1.0.0
       - name: com.unity.2d.animation
-        version: 5.0.7
+        version: 5.1.0
       - name: com.unity.mathematics
         version: 1.1.0
       - name: com.unity.modules.animation
@@ -377,13 +375,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637594727750000000
+      datePublishedTicks: 637781310920000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/2d.git
-        revision: 9e7fd5cbe078d004f1e87ecdf3b57436664a690a
+        revision: e1ff2896b994f5eb1cc6bec519c643b3e2cd32ec
         path: 
     - packageId: com.unity.2d.sprite@1.0.0
       testable: 0
@@ -436,12 +434,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.2d.spriteshape@5.1.4
+    - packageId: com.unity.2d.spriteshape@5.2.0
       testable: 0
       isDirectDependency: 1
-      version: 5.1.4
+      version: 5.2.0
       source: 1
-      resolvedPath: S:\Unity\FarmTorio\FarmTorio\Library\PackageCache\com.unity.2d.spriteshape@5.1.4
+      resolvedPath: S:\Unity\FarmTorio\FarmTorio\Library\PackageCache\com.unity.2d.spriteshape@5.2.0
       assetPath: Packages/com.unity.2d.spriteshape
       name: com.unity.2d.spriteshape
       displayName: 2D SpriteShape
@@ -512,6 +510,7 @@ m_PackageAssets:
         - 5.1.5
         - 5.1.6
         - 5.1.7
+        - 5.2.0
         - 6.0.0-pre.1
         - 6.0.0-pre.2
         - 6.0.0
@@ -524,17 +523,15 @@ m_PackageAssets:
         - 7.0.3
         - 8.0.0-pre.4
         - 8.0.0-pre.5
+        - 8.0.0
         compatible:
-        - 5.1.4
-        - 5.1.5
-        - 5.1.6
-        - 5.1.7
-        verified: 5.1.7
+        - 5.2.0
+        verified: 5.2.0
       dependencies:
       - name: com.unity.mathematics
         version: 1.1.0
       - name: com.unity.2d.common
-        version: 4.0.3
+        version: 4.1.0
       - name: com.unity.2d.path
         version: 4.0.2
       - name: com.unity.modules.physics2d
@@ -543,7 +540,7 @@ m_PackageAssets:
       - name: com.unity.mathematics
         version: 1.1.0
       - name: com.unity.2d.common
-        version: 4.0.3
+        version: 4.1.0
       - name: com.unity.2d.sprite
         version: 1.0.0
       - name: com.unity.modules.uielements
@@ -579,13 +576,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637637511330000000
+      datePublishedTicks: 637781310960000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/2d.git
-        revision: 6f9c488e4d487ead34ee4d516f0a2f4a911a8b25
+        revision: e1ff2896b994f5eb1cc6bec519c643b3e2cd32ec
         path: 
     - packageId: com.unity.2d.tilemap@1.0.0
       testable: 0
@@ -637,12 +634,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.collab-proxy@1.11.2
+    - packageId: com.unity.collab-proxy@1.15.7
       testable: 0
       isDirectDependency: 1
-      version: 1.11.2
+      version: 1.15.7
       source: 1
-      resolvedPath: S:\Unity\FarmTorio\FarmTorio\Library\PackageCache\com.unity.collab-proxy@1.11.2
+      resolvedPath: S:\Unity\FarmTorio\FarmTorio\Library\PackageCache\com.unity.collab-proxy@1.15.7
       assetPath: Packages/com.unity.collab-proxy
       name: com.unity.collab-proxy
       displayName: Version Control
@@ -690,9 +687,13 @@ m_PackageAssets:
         - 1.14.1
         - 1.14.4
         - 1.14.7
+        - 1.14.9
+        - 1.14.12
         - 1.15.1
         - 1.15.4
         - 1.15.7
+        - 1.15.9
+        - 1.15.12
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -704,15 +705,9 @@ m_PackageAssets:
         - 2.1.0-preview.5
         - 2.1.0-preview.6
         compatible:
-        - 1.11.2
-        - 1.12.5
-        - 1.13.5
-        - 1.14.1
-        - 1.14.4
-        - 1.14.7
-        - 1.15.1
-        - 1.15.4
         - 1.15.7
+        - 1.15.9
+        - 1.15.12
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -723,9 +718,19 @@ m_PackageAssets:
         - 2.1.0-preview.3
         - 2.1.0-preview.5
         - 2.1.0-preview.6
-        verified: 1.11.2
-      dependencies: []
-      resolvedDependencies: []
+        verified: 1.15.12
+      dependencies:
+      - name: com.unity.nuget.newtonsoft-json
+        version: 2.0.0
+      - name: com.unity.services.core
+        version: 1.0.1
+      resolvedDependencies:
+      - name: com.unity.nuget.newtonsoft-json
+        version: 2.0.0
+      - name: com.unity.services.core
+        version: 1.0.1
+      - name: com.unity.modules.unitywebrequest
+        version: 1.0.0
       keywords:
       - backup
       - cloud
@@ -752,13 +757,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637679178630000000
+      datePublishedTicks: 637744672890000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/com.unity.cloud.collaborate.git
-        revision: 3bc7fe2ab9acbe4538785fec6100ac17fe9e8da5
+        revision: d208594e5483cdf10d303b6ee17df4d6bf58d3de
         path: 
     - packageId: com.unity.ide.rider@2.0.7
       testable: 0
@@ -808,6 +813,8 @@ m_PackageAssets:
         - 3.0.6
         - 3.0.7
         - 3.0.9
+        - 3.0.10
+        - 3.0.12
         compatible:
         - 1.0.2
         - 1.0.6
@@ -835,6 +842,8 @@ m_PackageAssets:
         - 3.0.6
         - 3.0.7
         - 3.0.9
+        - 3.0.10
+        - 3.0.12
         verified: 2.0.7
       dependencies:
       - name: com.unity.test-framework
@@ -869,12 +878,12 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.rider.git
         revision: abb44f053e9a41d2e00e149e32a19bcec76e98b4
         path: 
-    - packageId: com.unity.ide.visualstudio@2.0.11
+    - packageId: com.unity.ide.visualstudio@2.0.14
       testable: 0
       isDirectDependency: 1
-      version: 2.0.11
+      version: 2.0.14
       source: 1
-      resolvedPath: S:\Unity\FarmTorio\FarmTorio\Library\PackageCache\com.unity.ide.visualstudio@2.0.11
+      resolvedPath: S:\Unity\FarmTorio\FarmTorio\Library\PackageCache\com.unity.ide.visualstudio@2.0.14
       assetPath: Packages/com.unity.ide.visualstudio
       name: com.unity.ide.visualstudio
       displayName: Visual Studio Editor
@@ -907,6 +916,7 @@ m_PackageAssets:
         - 2.0.9
         - 2.0.11
         - 2.0.12
+        - 2.0.14
         compatible:
         - 1.0.2
         - 1.0.3
@@ -924,7 +934,8 @@ m_PackageAssets:
         - 2.0.9
         - 2.0.11
         - 2.0.12
-        verified: 2.0.12
+        - 2.0.14
+        verified: 2.0.14
       dependencies:
       - name: com.unity.test-framework
         version: 1.1.9
@@ -950,13 +961,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637613656180000000
+      datePublishedTicks: 637782923640000000
       documentationUrl: 
-      hasRepository: 1
+      hasRepository: 0
       repository:
-        type: git
-        url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.visualstudio.git
-        revision: 680e06d94ffca728223ae2cb14bb919cd354e2c1
+        type: 
+        url: 
+        revision: 
         path: 
     - packageId: com.unity.ide.vscode@1.2.4
       testable: 0
@@ -992,6 +1003,7 @@ m_PackageAssets:
         - 1.2.2
         - 1.2.3
         - 1.2.4
+        - 1.2.5
         compatible:
         - 1.0.2
         - 1.0.3
@@ -1005,7 +1017,8 @@ m_PackageAssets:
         - 1.2.2
         - 1.2.3
         - 1.2.4
-        verified: 1.2.4
+        - 1.2.5
+        verified: 1.2.5
       dependencies: []
       resolvedDependencies: []
       keywords: []
@@ -1081,9 +1094,13 @@ m_PackageAssets:
         - 1.1.27
         - 1.1.29
         - 1.1.30
+        - 2.0.1-pre.12
+        - 2.0.1-pre.18
         compatible:
         - 1.1.29
         - 1.1.30
+        - 2.0.1-pre.12
+        - 2.0.1-pre.18
         verified: 1.1.30
       dependencies:
       - name: com.unity.ext.nunit
@@ -1373,7 +1390,9 @@ m_PackageAssets:
         - 1.6.1
         - 1.6.2
         - 1.6.3
+        - 1.6.4
         - 1.7.0-pre.1
+        - 1.7.0-pre.2
         compatible:
         - 1.4.8
         - 1.5.0-pre.2
@@ -1397,7 +1416,9 @@ m_PackageAssets:
         - 1.6.1
         - 1.6.2
         - 1.6.3
+        - 1.6.4
         - 1.7.0-pre.1
+        - 1.7.0-pre.2
         verified: 1.4.8
       dependencies:
       - name: com.unity.modules.director
@@ -3309,6 +3330,117 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ext.nunit.git
         revision: 29ea4d6504a5f58fb3a6934db839aa80ae6d9d88
         path: 
+    - packageId: com.unity.nuget.newtonsoft-json@2.0.0
+      testable: 0
+      isDirectDependency: 0
+      version: 2.0.0
+      source: 1
+      resolvedPath: S:\Unity\FarmTorio\FarmTorio\Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0
+      assetPath: Packages/com.unity.nuget.newtonsoft-json
+      name: com.unity.nuget.newtonsoft-json
+      displayName: Newtonsoft Json
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: library
+      description: 'Newtonsoft Json for use in Unity projects and Unity packages.
+        Currently synced to version 12.0.2.
+
+
+        This package is used for advanced
+        json serialization and deserialization. Most Unity users will be better suited
+        using the existing json tools built into Unity.
+
+        To avoid assembly
+        clashes, please use this package if you intend to use Newtonsoft Json.'
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 2.0.0
+        compatible:
+        - 2.0.0
+        verified: 2.0.0
+      dependencies: []
+      resolvedDependencies: []
+      keywords: []
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 0
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/com.unity.nuget.newtonsoft-json.git
+        revision: d2fd6ed876261bbd82f59199ad711e7667bf633a
+        path: 
+    - packageId: com.unity.services.core@1.0.1
+      testable: 0
+      isDirectDependency: 0
+      version: 1.0.1
+      source: 1
+      resolvedPath: S:\Unity\FarmTorio\FarmTorio\Library\PackageCache\com.unity.services.core@1.0.1
+      assetPath: Packages/com.unity.services.core
+      name: com.unity.services.core
+      displayName: Services Core
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: 'This package defines common components used by multiple Game
+        Service packages.
+
+        These are standardized and aim to unify the overall
+        experience of working with Game Services packages.'
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 1.0.1
+        compatible:
+        - 1.0.1
+        verified: 1.0.1
+      dependencies:
+      - name: com.unity.modules.unitywebrequest
+        version: 1.0.0
+      resolvedDependencies:
+      - name: com.unity.modules.unitywebrequest
+        version: 1.0.0
+      keywords: []
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 0
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git
+        revision: 4cd880d4fd5c60597629249bf4f324e4c8d7aa2e
+        path: 
     - packageId: com.unity.mathematics@1.1.0
       testable: 0
       isDirectDependency: 0
@@ -3344,6 +3476,7 @@ m_PackageAssets:
         - 1.1.0-preview.1
         - 1.1.0
         - 1.2.1
+        - 1.2.5
         compatible:
         - 0.0.12-preview.2
         - 0.0.12-preview.5
@@ -3359,7 +3492,8 @@ m_PackageAssets:
         - 1.1.0-preview.1
         - 1.1.0
         - 1.2.1
-        verified: 1.2.1
+        - 1.2.5
+        verified: 1.2.5
       dependencies: []
       resolvedDependencies: []
       keywords:
@@ -3384,12 +3518,12 @@ m_PackageAssets:
         url: git@github.com:Unity-Technologies/Unity.Mathematics.git
         revision: 0a3dfafaf606098ea681de4c4be60f3aac63b773
         path: 
-    - packageId: com.unity.2d.common@4.0.3
+    - packageId: com.unity.2d.common@4.1.0
       testable: 0
       isDirectDependency: 0
-      version: 4.0.3
+      version: 4.1.0
       source: 1
-      resolvedPath: S:\Unity\FarmTorio\FarmTorio\Library\PackageCache\com.unity.2d.common@4.0.3
+      resolvedPath: S:\Unity\FarmTorio\FarmTorio\Library\PackageCache\com.unity.2d.common@4.1.0
       assetPath: Packages/com.unity.2d.common
       name: com.unity.2d.common
       displayName: 2D Common
@@ -3421,11 +3555,12 @@ m_PackageAssets:
         - 4.0.1
         - 4.0.2
         - 4.0.3
+        - 4.1.0
         - 5.0.0-pre.1
         - 5.0.0-pre.2
         compatible:
-        - 4.0.3
-        verified: 4.0.3
+        - 4.1.0
+        verified: 4.1.0
       dependencies:
       - name: com.unity.2d.sprite
         version: 1.0.0
@@ -3458,13 +3593,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637408843940000000
+      datePublishedTicks: 0
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/2d.git
-        revision: c97def465b1932276762fc13f4cfee58da99d5e9
+        revision: e1ff2896b994f5eb1cc6bec519c643b3e2cd32ec
         path: 
     - packageId: com.unity.2d.path@4.0.2
       testable: 0
@@ -3535,4 +3670,4 @@ m_PackageAssets:
   m_LocalPackages:
     m_LocalFileStatus: []
 m_ProjectPath: S:/Unity/FarmTorio/FarmTorio/Packages
-m_EditorVersion: 2020.3.20f1 (41c4e627c95f)
+m_EditorVersion: 2020.3.28f1 (f5400f52e03f)

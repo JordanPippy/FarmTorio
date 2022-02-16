@@ -23,18 +23,20 @@ public class Inventory : MonoBehaviour
 
     public List<Item> items = new List<Item>();
 
-    public void Add(Item item)
+    public bool Add(Item item)
     {
         if (items.Count >= space)
         {
             print("Inventory full");
-            return;
+            return false;
         }
 
         items.Add(item);
 
         if (onItemChangedCallback != null)
             onItemChangedCallback.Invoke();
+            
+        return true;
     }
 
     public void Remove(Item item)

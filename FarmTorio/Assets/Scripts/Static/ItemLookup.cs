@@ -6,13 +6,14 @@ public static class ItemLookup
 {
     public static List<Item> items;
 
-    public static void initItems()
+    public static void InitItems()
     {
         items = new List<Item>();
-        Sprite[] sprites = Resources.LoadAll<Sprite>("GUI");
+        Item[] tempItems = Resources.LoadAll<Item>("Items/");
+        for (int i = 0; i < tempItems.Length; i++)
+            items.Add(tempItems[i]);
 
-        items.Add(Item.CreateInstance(sprites[21], 1, "Coin"));
-        Debug.Log("All items /loaded/");
+        tempItems = null; //No longer need reference to loaded resource.
     }
     public static Item lookup(Sprite sprite)
     {

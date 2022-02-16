@@ -11,6 +11,7 @@ public class Testing : MonoBehaviour
     void Start()
     {
         inventory = Inventory.instance;
+        ItemLookup.initItems();
     }
 
     // Update is called once per frame

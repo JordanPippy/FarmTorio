@@ -64,9 +64,6 @@ public class Pickup : MonoBehaviour
         if (other.gameObject.tag != "Pickup")
             return;
 
-
-        Debug.Log("NearbyItems: " + nearbyItems.Count);
-        Debug.Log("Pickup: " + pickup);
         if (pickup && canPickup)
         {
             if (nearbyItems.Count == 0)

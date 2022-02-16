@@ -7,6 +7,8 @@ public class Movement : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 move;
 
+    private Animator animator;
+
     [SerializeField]
     private float speed;
 
@@ -14,18 +16,22 @@ public class Movement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        speed = 250.0f;
+        animator = GetComponent<Animator>();
+        speed = 5.0f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        move = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
+        move.x = Input.GetAxisRaw("Horizontal");
+        move.y = Input.GetAxisRaw("Vertical");
+
+        animator.SetFloat("Horizontal", move.x);
+        animator.SetFloat("Vertical", move.y);
+        animator.SetFloat("Speed", move.sqrMagnitude);
     }
     private void FixedUpdate()
     {
-        move.x *= speed * Time.fixedDeltaTime;
-        move.y *= speed * Time.fixedDeltaTime;
-        rb.velocity = move;
+        rb.MovePosition(rb.position + move * speed * Time.fixedDeltaTime);
     }
 }

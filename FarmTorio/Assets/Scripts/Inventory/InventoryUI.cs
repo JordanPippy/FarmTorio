@@ -7,6 +7,7 @@ public class InventoryUI : MonoBehaviour
     // Start is called before the first frame update
     public GameObject inventoryUI;
     private GameObject hotbar;
+    private HotbarUI hotbarUI;
     private List<InventorySlot> hotbarSlots;
 
     Inventory inventory;
@@ -24,6 +25,7 @@ public class InventoryUI : MonoBehaviour
             slots.Add(inventorySlots[i]);
         
         hotbar = GameObject.FindWithTag("Hotbar");
+        hotbarUI = hotbar.GetComponent<HotbarUI>();
         hotbar = hotbar.transform.GetChild(0).GetChild(0).gameObject;
 
         for (int i = 0; i < hotbar.transform.childCount; i++)
@@ -37,7 +39,10 @@ public class InventoryUI : MonoBehaviour
     {
         if (Input.GetButtonDown("Inventory"))
         {
+            GameStateHelper.UIOpen = inventoryUI.activeSelf ? false : true;
+
             inventoryUI.SetActive(!inventoryUI.activeSelf);
+
             if (inventoryUI.activeSelf)
                 UpdateUI();
         }
@@ -82,5 +87,7 @@ public class InventoryUI : MonoBehaviour
                 hotbarSlots[i].ClearSlot();
             }
         }
+
+        hotbarUI.CheckActiveItem();
     }
 }

@@ -8,6 +8,8 @@ public class HotbarUI : MonoBehaviour
     private List<GameObject> slots;
     public Sprite defaultSlot, currentSlot;
     private int currentSlotIndex, lastSlotIndex;
+
+    private static Item activeItem;
     void Start()
     {
         currentSlotIndex = 0; lastSlotIndex = 0;
@@ -41,6 +43,18 @@ public class HotbarUI : MonoBehaviour
         slots[lastSlotIndex].GetComponent<SpriteRenderer>().sprite = defaultSlot;
         slots[currentSlotIndex].GetComponent<SpriteRenderer>().sprite = currentSlot;
 
+        CheckActiveItem();
+
         lastSlotIndex = currentSlotIndex;
+    }
+
+    public void CheckActiveItem()
+    {
+        activeItem = slots[currentSlotIndex].GetComponent<InventorySlot>().item;
+    }
+
+    public static Item GetActiveItem()
+    {
+        return activeItem;
     }
 }

@@ -22,4 +22,9 @@ public class Item : ScriptableObject
         item.title = name;
         return item;
     }
+
+    public virtual void Use()
+    {
+        Debug.Log("Base Use Active Item: " + HotbarUI.GetActiveItem());
+    }
 }

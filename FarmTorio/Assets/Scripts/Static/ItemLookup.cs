@@ -27,4 +27,17 @@ public static class ItemLookup
         }
         return null;
     }
+
+    public static Item lookup(string name)
+    {
+        for (int i = 0; i < items.Count; i++)
+        {
+            if (name == items[i].title)
+            {
+                Debug.Log("HOLY FUCK WE FOUND IT");
+                return items[i];
+            }
+        }
+        return null;
+    }
 }

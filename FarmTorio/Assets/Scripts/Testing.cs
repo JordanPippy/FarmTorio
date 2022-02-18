@@ -6,12 +6,12 @@ public class Testing : MonoBehaviour
 {
     // Start is called before the first frame update
     Inventory inventory;
-    private Item item;
-    public Sprite icon;
+    public Item item;
     void Start()
     {
         inventory = Inventory.instance;
         ItemLookup.InitItems();
+        inventory.Add(ItemLookup.lookup("Hoe"));
     }
 
     // Update is called once per frame
@@ -19,9 +19,6 @@ public class Testing : MonoBehaviour
     {
         if (Input.GetButtonDown("Testing1"))
         {
-            item = ScriptableObject.CreateInstance<Item>();
-            item.id = 42;
-            item.sprite = icon;
             inventory.Add(item);
         }
         if (Input.GetButtonDown("Testing2"))

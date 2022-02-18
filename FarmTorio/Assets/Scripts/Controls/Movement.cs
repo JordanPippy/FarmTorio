@@ -29,9 +29,11 @@ public class Movement : MonoBehaviour
         animator.SetFloat("Horizontal", move.x);
         animator.SetFloat("Vertical", move.y);
         animator.SetFloat("Speed", move.sqrMagnitude);
+
+        move = move.normalized;
     }
     private void FixedUpdate()
     {
-        rb.MovePosition(rb.position + move * speed * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + (move * speed * Time.fixedDeltaTime));
     }
 }

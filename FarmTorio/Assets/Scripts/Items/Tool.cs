@@ -2,24 +2,43 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Tool", menuName = "Assets/Tool")]
 
 public class Tool : Item
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    private GameStateHelper.ToolType toolType;
+    public Tool() : base()
     {
-        
+
+    }
+    public Tool(Sprite sprite, int id, string name, GameStateHelper.ToolType toolType) : base(sprite, id, name)
+    {
+        this.toolType = toolType;
     }
 
     public override void Use()
     {
-        Debug.Log("Tool Use Active Item: " + HotbarUI.GetActiveItem());
+        switch (toolType)
+        {
+            case GameStateHelper.ToolType.HOE:
+                UseHoe();
+                break;
+            case GameStateHelper.ToolType.PICKAXE:
+                UsePickaxe();
+                break;
+            default:
+                Debug.Log("Invalid Tool?");
+                break;
+        }
+    }
+
+    private void UseHoe()
+    {
+        Debug.Log("Use Hoe method");
+    }
+
+    private void UsePickaxe()
+    {
+        Debug.Log("Use Pickaxe method");
     }
 }

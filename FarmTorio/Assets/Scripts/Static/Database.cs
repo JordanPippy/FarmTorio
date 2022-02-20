@@ -2,20 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public static class ItemLookup
+public static class Database
 {
     public static List<Item> items;
 
     public static void InitItems()
     {
         items = new List<Item>();
-        Item[] tempItems = Resources.LoadAll<Item>("Items/");
-        for (int i = 0; i < tempItems.Length; i++)
-            items.Add(tempItems[i]);
-
-        tempItems = null; //No longer need reference to loaded resource.
+        Sprite[] sprites = Resources.LoadAll<Sprite>("");
+        items.Add(new Tool(sprites[26], 1, "Hoe", GameStateHelper.ToolType.HOE));
+        items.Add(new Tool(sprites[42], 2, "Pickaxe", GameStateHelper.ToolType.PICKAXE));
+        items.Add(new Item(sprites[22], 20, "Diamond"));
+        items.Add(new Item(sprites[21], 21, "Coin"));
     }
-    public static Item lookup(Sprite sprite)
+    public static Item ItemLookup(Sprite sprite)
     {
         for (int i = 0; i < items.Count; i++)
         {
@@ -28,7 +28,7 @@ public static class ItemLookup
         return null;
     }
 
-    public static Item lookup(string name)
+    public static Item ItemLookup(string name)
     {
         for (int i = 0; i < items.Count; i++)
         {

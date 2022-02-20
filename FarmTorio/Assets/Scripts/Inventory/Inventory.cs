@@ -19,7 +19,7 @@ public class Inventory : MonoBehaviour
     public delegate void OnItemChanged();
 	public OnItemChanged onItemChangedCallback;
 
-    public int space = 14;
+    public int space = GameStateHelper.inventorySpace;
 
     public List<Item> items = new List<Item>();
 

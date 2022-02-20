@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Pickup
   - Hotbar
+  - MinesTeleport
+  - FarmTeleport
   layers:
   - Default
   - TransparentFX

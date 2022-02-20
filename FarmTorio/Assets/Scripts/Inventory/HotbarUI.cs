@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HotbarUI : MonoBehaviour
 {
@@ -10,16 +11,19 @@ public class HotbarUI : MonoBehaviour
     private int currentSlotIndex, lastSlotIndex;
 
     private static Item activeItem;
+
+    public static bool awake = false;
     void Start()
     {
         currentSlotIndex = 0; lastSlotIndex = 0;
         slots = new List<GameObject>();
 
-        GameObject temp = transform.GetChild(0).GetChild(0).gameObject;
+        GameObject temp = transform.GetChild(0).GetChild(0).GetChild(0).gameObject;
         for (int i = 0; i < temp.transform.childCount; i++)
             slots.Add(temp.transform.GetChild(i).gameObject);
 
-        slots[0].GetComponent<SpriteRenderer>().sprite = currentSlot;
+        slots[0].GetComponent<Image>().sprite = currentSlot;
+        print("Hotbar init");
     }
 
     // Update is called once per frame
@@ -37,11 +41,11 @@ public class HotbarUI : MonoBehaviour
 
     private void MoveCurrentSlot()
     {
-        currentSlotIndex += 7;
+        currentSlotIndex += GameStateHelper.inventorySpace;
         currentSlotIndex = currentSlotIndex % slots.Count;
 
-        slots[lastSlotIndex].GetComponent<SpriteRenderer>().sprite = defaultSlot;
-        slots[currentSlotIndex].GetComponent<SpriteRenderer>().sprite = currentSlot;
+        slots[lastSlotIndex].GetComponent<Image>().sprite = defaultSlot;
+        slots[currentSlotIndex].GetComponent<Image>().sprite = currentSlot;
 
         CheckActiveItem();
 

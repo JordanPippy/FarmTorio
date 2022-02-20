@@ -12,6 +12,7 @@ public class Testing : MonoBehaviour
         inventory = Inventory.instance;
         ItemLookup.InitItems();
         inventory.Add(ItemLookup.lookup("Hoe"));
+        print("Added Hoe");
     }
 
     // Update is called once per frame

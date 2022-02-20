@@ -26,7 +26,7 @@ public class InventoryUI : MonoBehaviour
         
         hotbar = GameObject.FindWithTag("Hotbar");
         hotbarUI = hotbar.GetComponent<HotbarUI>();
-        hotbar = hotbar.transform.GetChild(0).GetChild(0).gameObject;
+        hotbar = hotbar.transform.GetChild(0).GetChild(0).GetChild(0).gameObject;
 
         for (int i = 0; i < hotbar.transform.childCount; i++)
             hotbarSlots.Add(hotbar.transform.GetChild(i).GetComponent<InventorySlot>());

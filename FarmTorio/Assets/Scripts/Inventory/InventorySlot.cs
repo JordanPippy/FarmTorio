@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InventorySlot : MonoBehaviour
 {
@@ -8,18 +9,27 @@ public class InventorySlot : MonoBehaviour
     public Sprite icon;
     public Item item;
     public int count = 0;
+    private Image itemDisplayImage;
+    void Start()
+    {
+        itemDisplayImage = transform.GetChild(0).GetComponent<Image>();
+        itemDisplayImage.enabled = false;
+    }
     public void AddItem(Item item)
     {
-        transform.GetChild(0).GetComponentsInChildren<SpriteRenderer>()[0].sprite = item.sprite;
+        itemDisplayImage.enabled = true;
+        itemDisplayImage.sprite = item.sprite;
         this.item = item;
         count++;
     }
 
     public void ClearSlot()
     {
-        transform.GetChild(0).GetComponentsInChildren<SpriteRenderer>()[0].sprite = null;
+        transform.GetChild(0).GetComponent<Image>().sprite = null;
         item = null;
         count = 0;
+
+        transform.GetChild(0).GetComponent<Image>().enabled = false;
     }
 
 }

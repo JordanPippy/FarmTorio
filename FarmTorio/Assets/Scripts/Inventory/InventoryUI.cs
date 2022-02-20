@@ -6,8 +6,8 @@ public class InventoryUI : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject inventoryUI;
-    private GameObject hotbar;
-    private HotbarUI hotbarUI;
+    public GameObject hotbar;
+    public HotbarUI hotbarUI;
     private List<InventorySlot> hotbarSlots;
 
     Inventory inventory;
@@ -20,13 +20,11 @@ public class InventoryUI : MonoBehaviour
 
         slots = new List<InventorySlot>();
         hotbarSlots = new List<InventorySlot>();
+        
         InventorySlot[] inventorySlots = GetComponentsInChildren<InventorySlot>();
         for (int i = 0; i < inventorySlots.Length; i++)
             slots.Add(inventorySlots[i]);
         
-        hotbar = GameObject.FindWithTag("Hotbar");
-        hotbarUI = hotbar.GetComponent<HotbarUI>();
-        hotbar = hotbar.transform.GetChild(0).GetChild(0).GetChild(0).gameObject;
 
         for (int i = 0; i < hotbar.transform.childCount; i++)
             hotbarSlots.Add(hotbar.transform.GetChild(i).GetComponent<InventorySlot>());

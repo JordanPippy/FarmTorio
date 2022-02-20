@@ -5,7 +5,7 @@ using UnityEngine;
 public static class GameStateHelper
 {
     public static bool UIOpen = false;
-    public static int inventorySpace = 12;
+    public static int inventorySpace = 24;
 
     public enum ToolType
     {

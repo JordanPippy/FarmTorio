@@ -68,7 +68,7 @@ public class Pickup : MonoBehaviour
         {
             if (nearbyItems.Count == 0)
                 return;
-            Item item = ItemLookup.lookup(nearbyItems[0].GetComponent<SpriteRenderer>().sprite);
+            Item item = Database.ItemLookup(nearbyItems[0].GetComponent<SpriteRenderer>().sprite);
             if (inventory.Add(item))
             {
                 //nearbyItems.Remove(nearbyItems[0]);

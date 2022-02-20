@@ -10,8 +10,10 @@ public class Testing : MonoBehaviour
     void Start()
     {
         inventory = Inventory.instance;
-        ItemLookup.InitItems();
-        inventory.Add(ItemLookup.lookup("Hoe"));
+        Database.InitItems();
+        inventory.Add(Database.ItemLookup("Hoe"));
+        inventory.Add(Database.ItemLookup("Pickaxe"));
+        item = Database.ItemLookup("Diamond");
         print("Added Hoe");
     }
 

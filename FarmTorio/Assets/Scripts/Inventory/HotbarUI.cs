@@ -13,14 +13,14 @@ public class HotbarUI : MonoBehaviour
     private static Item activeItem;
 
     public static bool awake = false;
+    public GameObject grid;
     void Start()
     {
         currentSlotIndex = 0; lastSlotIndex = 0;
         slots = new List<GameObject>();
 
-        GameObject temp = transform.GetChild(0).GetChild(0).GetChild(0).gameObject;
-        for (int i = 0; i < temp.transform.childCount; i++)
-            slots.Add(temp.transform.GetChild(i).gameObject);
+        for (int i = 0; i < grid.transform.childCount; i++)
+            slots.Add(grid.transform.GetChild(i).gameObject);
 
         slots[0].GetComponent<Image>().sprite = currentSlot;
         print("Hotbar init");

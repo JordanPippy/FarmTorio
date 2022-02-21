@@ -8,10 +8,9 @@ public class HotbarUI : MonoBehaviour
     // Start is called before the first frame update
     private List<GameObject> slots;
     public Sprite defaultSlot, currentSlot;
-    private int currentSlotIndex, lastSlotIndex;
+    private static int currentSlotIndex, lastSlotIndex;
 
     private static Item activeItem;
-
     public static bool awake = false;
     public GameObject grid;
     void Start()
@@ -55,6 +54,11 @@ public class HotbarUI : MonoBehaviour
     public void CheckActiveItem()
     {
         activeItem = slots[currentSlotIndex].GetComponent<InventorySlot>().item;
+    }
+
+    public static int getActiveItemSlot()
+    {
+        return currentSlotIndex;
     }
 
     public static Item GetActiveItem()

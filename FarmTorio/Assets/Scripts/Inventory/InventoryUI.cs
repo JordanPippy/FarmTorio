@@ -24,11 +24,17 @@ public class InventoryUI : MonoBehaviour
         InventorySlot[] inventorySlots = GetComponentsInChildren<InventorySlot>();
 
         for (int i = 0; i < inventorySlots.Length; i++)
+        {
             slots.Add(inventorySlots[i]);
+            slots[i].index = i;
+        }
         
 
         for (int i = 0; i < hotbar.transform.childCount; i++)
+        {
             hotbarSlots.Add(hotbar.transform.GetChild(i).GetComponent<InventorySlot>());
+            hotbarSlots[i].index = i;
+        }
 
         inventoryUI.SetActive(false);
     }
@@ -54,37 +60,19 @@ public class InventoryUI : MonoBehaviour
         if (!inventoryUI.activeSelf)
             return;
 
-        List<Item> items = inventory.items;
 
 
         for (int i = 0; i < slots.Count; i++)
         {
-            if (i < inventory.items.Count)
-            {
-                slots[i].AddItem(inventory.items[i]);
-            }
-            else
-            {
-                slots[i].ClearSlot();
-            }
+            slots[i].MatchInventory();
         }
     }
 
     private void UpdateHotBar()
     {
-        List<Item> items = inventory.items;
-
-
         for (int i = 0; i < hotbarSlots.Count; i++)
         {
-            if (i < inventory.items.Count)
-            {
-                hotbarSlots[i].AddItem(inventory.items[i]);
-            }
-            else
-            {
-                hotbarSlots[i].ClearSlot();
-            }
+            hotbarSlots[i].MatchInventory();
         }
 
         hotbarUI.CheckActiveItem();

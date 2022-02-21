@@ -27,8 +27,9 @@ public class Testing : MonoBehaviour
         if (Input.GetButtonDown("Testing2"))
         {
             print("testing2");
-            if (inventory.items.Count > 0)
-                inventory.Remove(inventory.items[0]);
+            if (HotbarUI.GetActiveItem() != null)
+                inventory.Remove(HotbarUI.getActiveItemSlot());
+                //inventory.Remove(HotbarUI.GetActiveItem());
         }
     }
 }

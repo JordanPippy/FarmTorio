@@ -17,6 +17,11 @@ public class InventorySlot : MonoBehaviour
     }
     public void AddItem(Item item)
     {
+        if (itemDisplayImage == null)
+        {
+            Debug.Log("Yep, im null.");
+            itemDisplayImage = transform.GetChild(0).GetComponent<Image>();
+        }
         itemDisplayImage.enabled = true;
         itemDisplayImage.sprite = item.sprite;
         this.item = item;

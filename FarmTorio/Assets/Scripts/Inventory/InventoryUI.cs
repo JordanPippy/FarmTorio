@@ -22,6 +22,7 @@ public class InventoryUI : MonoBehaviour
         hotbarSlots = new List<InventorySlot>();
         
         InventorySlot[] inventorySlots = GetComponentsInChildren<InventorySlot>();
+
         for (int i = 0; i < inventorySlots.Length; i++)
             slots.Add(inventorySlots[i]);
         

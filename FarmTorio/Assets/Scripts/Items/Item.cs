@@ -8,20 +8,6 @@ public class Item
     public string title;
     public int id;
 
-/*
-    public static Item CreateInstance()
-    {
-        return ScriptableObject.CreateInstance<Item>();
-    }
-    public static Item CreateInstance(Sprite sprite, int id, string name)
-    {
-        Item item = ScriptableObject.CreateInstance<Item>();
-        item.sprite = sprite;
-        item.id = id;
-        item.title = name;
-        return item;
-    }
-*/
     public Item()
     {
 
@@ -32,7 +18,6 @@ public class Item
         this.sprite = sprite;
         this.id = id;
         this.title = name;
-        Debug.Log(this.sprite);
     }
 
     public virtual void Use()

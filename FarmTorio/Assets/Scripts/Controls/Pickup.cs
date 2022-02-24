@@ -52,10 +52,7 @@ public class Pickup : MonoBehaviour
         if (itemObject.tag != "Pickup")
             return;
 
-        if (nearbyItems.Remove(itemObject))
-        {
-            Debug.Log("Moved too far away from item");
-        }
+        nearbyItems.Remove(itemObject);
     }
 
 

@@ -30,17 +30,16 @@ public class InventorySlot : MonoBehaviour
         if (itemCountText == null)
             itemCountText = transform.GetChild(1).GetComponent<TextMeshProUGUI>();
 
-        Debug.Log(index);
-        if (inventory.items.Count > index)
+
+        this.item = inventory.items[index].item;
+        if (item != null)
         {
-            this.item = inventory.items[index].item;
             itemDisplayImage.enabled = true;
             itemDisplayImage.sprite = item.sprite;
             itemCountText.SetText("" + inventory.items[index].count);
         }
         else
         {
-            this.item = null;
             itemDisplayImage.sprite = null;
             itemCountText.SetText("");
             itemDisplayImage.enabled = false;

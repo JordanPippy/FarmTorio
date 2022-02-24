@@ -21,7 +21,6 @@ public static class Database
         {
             if (sprite == items[i].sprite)
             {
-                Debug.Log("HOLY FUCK WE FOUND IT");
                 return items[i];
             }
         }
@@ -34,7 +33,6 @@ public static class Database
         {
             if (name == items[i].title)
             {
-                Debug.Log("HOLY FUCK WE FOUND IT");
                 return items[i];
             }
         }
